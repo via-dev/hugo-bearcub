@@ -4,7 +4,7 @@
     <h3 class="blog-filter">{{ i18n "filtering-for" }} "{{ .Title }}"</h3>
   {{ end }}
   <ul class="blog-posts">
-    {{ range .Pages }}
+  {{ range .Pages }}
     <li>
       <span>
         <i>
@@ -23,7 +23,7 @@
     <li>
       {{ i18n "no-posts" }}
     </li>
-    {{ end }}
+  {{ end }}
   </ul>
   {{ if not .Data.Singular }}
     <div>
